@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: deversity-496918
+    schema: raw_data
+    tables:
+      - name: orders
+      - name: regions
+      - name: sales_agents
+      - name: zip_codes
+
+  - name: wc_data
+    database: deversity-496918
+    schema: wc_data
+    description: "World Cup Raw Data."
+    tables:
+      - name: worldcup
+        description: "Table contains repeated record regardin matches and goals."
